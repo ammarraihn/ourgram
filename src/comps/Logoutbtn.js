@@ -5,9 +5,8 @@ function Logoutbtn() {
     const navigate = useNavigate();
 
     const handleClick = (e) => {
-        console.log("logout");
-        navigate("/")
-        localStorage.removeItem("user");
+      localStorage.removeItem("user");
+      navigate("/")
     }
 
   return (

@@ -13,22 +13,25 @@ const Login = () => {
             console.log("Login successful");
             navigate("/gallery");
             localStorage.setItem("user", "admin");
+            alert("Profile berhasil teridentifikasi, Halo "+ username+"!");
         } else {
             alert("Invalid credentials");
         }
     }
 
     return (
-        <div className="auth-form-container">
-            <h2>Login</h2>
+        <body className="login-body">
+            <div className="auth-form-container">
+            <h2 className="ourgram">ourgram.</h2>
             <form className="login-form" onSubmit={handleSubmit}>
-                <div>username</div>
+                <div className="usertitle">username</div>
                 <input className="username" value={username} onChange={(e) => setUsername(e.target.value)} id="username" name="username" />
-                <div>password</div>
+                <div className="passtitle">password</div>
                 <input className="password" value={pass} onChange={(e) => setPass(e.target.value)} type="password" id="password" name="password" />
                 <button className="login-btn" type="submit">Log In</button>
             </form>
-        </div>
+            </div>
+        </body>
     )
 }
 
