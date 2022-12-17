@@ -9,7 +9,7 @@ const Login = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (email == "admin" && pass == "admin") {
+        if (email === "admin" && pass === "admin") {
             console.log("Login successful");
             navigate("/gallery");
             localStorage.setItem("user", "admin");
