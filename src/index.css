@@ -89,7 +89,7 @@ label:hover{
 .img-grid{
   margin: -40px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 15px;
 }
 .img-wrap{
@@ -172,6 +172,10 @@ label:hover{
 }
 
 @media(max-width: 768px){
+  .img-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .backdrop{
     position: fixed;
     top: 0;

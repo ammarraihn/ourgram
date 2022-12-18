@@ -5,8 +5,14 @@ function Logoutbtn() {
     const navigate = useNavigate();
 
     const handleClick = (e) => {
-      localStorage.removeItem("user");
-      navigate("/")
+      e.preventDefault();
+      if (window.confirm("Are you sure you want to logout?")) {
+        localStorage.removeItem("user");
+        navigate("/")
+      } else {
+        navigate("/gallery")
+      }
+      
     }
 
   return (
