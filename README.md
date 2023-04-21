@@ -1,6 +1,6 @@
 Project ini saya dedikasikan untuk kekasih hati saya. Untuk itu, karena kebutuhan penggunaan yang bersifat private, saya tidak menyediakan akses untuk melihat website secara remote.
 
-Project ini merupakan sebuah gallery web app dengan menggunakan firebase firestore sebagai database. 
+Project ini merupakan sebuah gallery web app dengan menggunakan firebase firestore sebagai database. Project ini menggunakan framework ReactJS
 
 Terdapat beberapa fitur:
 1. Login (khusus untuk saya dan pasangan)
